@@ -17,11 +17,11 @@ body{
 /* HEADING */
 
 .heading{
-    outline:1px solid red;
+    /* outline:1px solid red; */
     background-color: #1f2937;
     padding: 1rem 45px 8rem;
     /* display: flex; */
-    max-height: 600px;
+    max-height: 2000px;
     /* flex-direction: column;
     justify-content: center; 
     align-items: center;  */
@@ -109,3 +109,56 @@ body{
     /* outline: 1px solid red; */
 }
 
+
+
+/* Random info */
+.random-info{
+    max-height: max-content;
+    /* border: 2px solid red; */
+    padding: 2rem 0 8rem;
+    display: flex;
+    justify-content: center;
+}
+.random-info .container{
+    max-width: 1000px;
+    flex: 1;
+    /* outline: 1px solid red; */
+    padding: 0 4rem;
+}
+
+.random-info .container .content{
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.random-info .container .content h2{
+    /* border: 1px solid red; */
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.random-info .container .content .boxes{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.random-info .container .content .boxes .part{
+    flex: 1;
+}
+.random-info .container .content .boxes .part .box{
+    border:3px solid #3882F6;
+    aspect-ratio : 1 / 1;
+    border-radius: 8px;
+}
+.random-info .container .content .boxes .part p{
+    margin-top: 8px;
+    text-align: center;
+    color: #808080;
+}

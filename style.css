@@ -235,3 +235,18 @@ body{
     font-size: 15px;
     font-weight: 700;
 }
+
+
+/* footer  by this point I'm burn out rn haha, so writing css for footer as simple as possible*/
+
+.footer{
+    padding: 3rem 0;
+    background-color: #1F2937;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+.footer p{
+    max-width: fit-content;
+    margin:auto;
+}

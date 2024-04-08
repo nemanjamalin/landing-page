@@ -35,10 +35,29 @@ body{
   /* outline: 1px solid red; */
     margin-top: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   margin: 1rem auto 8rem;
 }
+
+@media screen and (max-width: 657px) {
+    .heading .header{
+        flex-direction: column;
+        gap:2rem;
+    }
+    .heading .header .navigation{
+        margin: auto;
+    }
+   
+  }
+
+  @media screen and (max-width: 400px) {
+    
+    .heading .header .navigation{
+        flex-direction: column;
+    }
+   
+  }
 
 .heading .header .main-logo{
     font-size: 24px;
@@ -110,6 +129,14 @@ body{
 }
 
 
+@media screen and (max-width: 1027px) {
+    .heading .hero .right-content{
+        margin: auto;
+    }
+   
+  }
+
+
 
 /* Random info */
 .random-info{
@@ -140,6 +167,7 @@ body{
     font-size: 36px;
     font-weight: bold;
     color: #1F2937;
+    text-align: center;
 }
 
 .random-info .container .content .boxes{
@@ -148,9 +176,19 @@ body{
     display: flex;
     justify-content: center;
     gap: 4rem;
+    /* flex-direction: column; */
 }
+
+@media screen and (max-width: 770px) {
+    .random-info .container .content .boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
 .random-info .container .content .boxes .part{
     flex: 1;
+    max-width: 170px;
 }
 .random-info .container .content .boxes .part .box{
     border:3px solid #3882F6;
@@ -218,6 +256,8 @@ body{
     align-items: center;
     background-color: #3882F6;
     border-radius: 5px;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 .call-to-action .container .text{
     color: #fff;
